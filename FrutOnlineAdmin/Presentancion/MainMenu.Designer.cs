@@ -30,27 +30,27 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panelTras = new System.Windows.Forms.Panel();
+            this.panelLogo = new System.Windows.Forms.Panel();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.PanelTitleBar = new System.Windows.Forms.Panel();
+            this.lblTitleChildForm = new System.Windows.Forms.Label();
+            this.panelShadow = new System.Windows.Forms.Panel();
+            this.panelDesktop = new System.Windows.Forms.Panel();
+            this.PicLogoCentro = new System.Windows.Forms.PictureBox();
+            this.btnCerrar = new FontAwesome.Sharp.IconButton();
+            this.iconFormHijoActual = new FontAwesome.Sharp.IconPictureBox();
             this.BtnClienteExterno = new FontAwesome.Sharp.IconButton();
             this.BtnInformes = new FontAwesome.Sharp.IconButton();
             this.BtnTrasportista = new FontAwesome.Sharp.IconButton();
             this.BtnSolicitud = new FontAwesome.Sharp.IconButton();
-            this.panelLogo = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.PictureBox();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.PanelTitleBar = new System.Windows.Forms.Panel();
-            this.lblTitleChildForm = new System.Windows.Forms.Label();
-            this.iconFormHijoActual = new FontAwesome.Sharp.IconPictureBox();
-            this.panelShadow = new System.Windows.Forms.Panel();
-            this.panelDesktop = new System.Windows.Forms.Panel();
-            this.btnCerrar = new FontAwesome.Sharp.IconButton();
-            this.PicLogoCentro = new System.Windows.Forms.PictureBox();
             this.panelTras.SuspendLayout();
             this.panelLogo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.PanelTitleBar.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconFormHijoActual)).BeginInit();
             this.panelDesktop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PicLogoCentro)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconFormHijoActual)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTras
@@ -66,6 +66,102 @@
             this.panelTras.Name = "panelTras";
             this.panelTras.Size = new System.Drawing.Size(220, 450);
             this.panelTras.TabIndex = 0;
+            // 
+            // panelLogo
+            // 
+            this.panelLogo.Controls.Add(this.btnHome);
+            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelLogo.Location = new System.Drawing.Point(0, 0);
+            this.panelLogo.Name = "panelLogo";
+            this.panelLogo.Size = new System.Drawing.Size(220, 120);
+            this.panelLogo.TabIndex = 0;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // PanelTitleBar
+            // 
+            this.PanelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(81)))));
+            this.PanelTitleBar.Controls.Add(this.btnCerrar);
+            this.PanelTitleBar.Controls.Add(this.lblTitleChildForm);
+            this.PanelTitleBar.Controls.Add(this.iconFormHijoActual);
+            this.PanelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
+            this.PanelTitleBar.Location = new System.Drawing.Point(220, 0);
+            this.PanelTitleBar.Name = "PanelTitleBar";
+            this.PanelTitleBar.Size = new System.Drawing.Size(580, 70);
+            this.PanelTitleBar.TabIndex = 1;
+            this.PanelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelTitleBar_MouseDown);
+            // 
+            // lblTitleChildForm
+            // 
+            this.lblTitleChildForm.AutoSize = true;
+            this.lblTitleChildForm.ForeColor = System.Drawing.Color.White;
+            this.lblTitleChildForm.Location = new System.Drawing.Point(69, 39);
+            this.lblTitleChildForm.Name = "lblTitleChildForm";
+            this.lblTitleChildForm.Size = new System.Drawing.Size(35, 13);
+            this.lblTitleChildForm.TabIndex = 1;
+            this.lblTitleChildForm.Text = "Home";
+            // 
+            // panelShadow
+            // 
+            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
+            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panelShadow.Location = new System.Drawing.Point(220, 70);
+            this.panelShadow.Name = "panelShadow";
+            this.panelShadow.Size = new System.Drawing.Size(580, 9);
+            this.panelShadow.TabIndex = 2;
+            // 
+            // panelDesktop
+            // 
+            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(74)))));
+            this.panelDesktop.Controls.Add(this.PicLogoCentro);
+            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelDesktop.Location = new System.Drawing.Point(220, 79);
+            this.panelDesktop.Name = "panelDesktop";
+            this.panelDesktop.Size = new System.Drawing.Size(580, 371);
+            this.panelDesktop.TabIndex = 3;
+            // 
+            // PicLogoCentro
+            // 
+            this.PicLogoCentro.Image = global::Presentancion.Properties.Resources.Logo_FrutOnline_SIN_F;
+            this.PicLogoCentro.Location = new System.Drawing.Point(0, -3);
+            this.PicLogoCentro.Name = "PicLogoCentro";
+            this.PicLogoCentro.Size = new System.Drawing.Size(580, 371);
+            this.PicLogoCentro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.PicLogoCentro.TabIndex = 0;
+            this.PicLogoCentro.TabStop = false;
+            // 
+            // btnCerrar
+            // 
+            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCerrar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.None;
+            this.btnCerrar.IconColor = System.Drawing.Color.Black;
+            this.btnCerrar.IconSize = 16;
+            this.btnCerrar.Location = new System.Drawing.Point(502, 3);
+            this.btnCerrar.Name = "btnCerrar";
+            this.btnCerrar.Rotation = 0D;
+            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
+            this.btnCerrar.TabIndex = 0;
+            this.btnCerrar.Text = "Cerrar";
+            this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
+            // 
+            // iconFormHijoActual
+            // 
+            this.iconFormHijoActual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(81)))));
+            this.iconFormHijoActual.ForeColor = System.Drawing.Color.Lime;
+            this.iconFormHijoActual.IconChar = FontAwesome.Sharp.IconChar.Home;
+            this.iconFormHijoActual.IconColor = System.Drawing.Color.Lime;
+            this.iconFormHijoActual.IconSize = 42;
+            this.iconFormHijoActual.Location = new System.Drawing.Point(19, 25);
+            this.iconFormHijoActual.Name = "iconFormHijoActual";
+            this.iconFormHijoActual.Size = new System.Drawing.Size(44, 42);
+            this.iconFormHijoActual.TabIndex = 0;
+            this.iconFormHijoActual.TabStop = false;
             // 
             // BtnClienteExterno
             // 
@@ -159,15 +255,6 @@
             this.BtnSolicitud.UseVisualStyleBackColor = true;
             this.BtnSolicitud.Click += new System.EventHandler(this.BtnSolicitudes_Click);
             // 
-            // panelLogo
-            // 
-            this.panelLogo.Controls.Add(this.btnHome);
-            this.panelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelLogo.Location = new System.Drawing.Point(0, 0);
-            this.panelLogo.Name = "panelLogo";
-            this.panelLogo.Size = new System.Drawing.Size(220, 120);
-            this.panelLogo.TabIndex = 0;
-            // 
             // btnHome
             // 
             this.btnHome.Image = global::Presentancion.Properties.Resources.Logo_FrutOnline;
@@ -178,93 +265,6 @@
             this.btnHome.TabIndex = 0;
             this.btnHome.TabStop = false;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
-            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // PanelTitleBar
-            // 
-            this.PanelTitleBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(81)))));
-            this.PanelTitleBar.Controls.Add(this.btnCerrar);
-            this.PanelTitleBar.Controls.Add(this.lblTitleChildForm);
-            this.PanelTitleBar.Controls.Add(this.iconFormHijoActual);
-            this.PanelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelTitleBar.Location = new System.Drawing.Point(220, 0);
-            this.PanelTitleBar.Name = "PanelTitleBar";
-            this.PanelTitleBar.Size = new System.Drawing.Size(580, 70);
-            this.PanelTitleBar.TabIndex = 1;
-            this.PanelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.PanelTitleBar_MouseDown);
-            // 
-            // lblTitleChildForm
-            // 
-            this.lblTitleChildForm.AutoSize = true;
-            this.lblTitleChildForm.ForeColor = System.Drawing.Color.White;
-            this.lblTitleChildForm.Location = new System.Drawing.Point(69, 39);
-            this.lblTitleChildForm.Name = "lblTitleChildForm";
-            this.lblTitleChildForm.Size = new System.Drawing.Size(35, 13);
-            this.lblTitleChildForm.TabIndex = 1;
-            this.lblTitleChildForm.Text = "Home";
-            // 
-            // iconFormHijoActual
-            // 
-            this.iconFormHijoActual.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(81)))));
-            this.iconFormHijoActual.ForeColor = System.Drawing.Color.Lime;
-            this.iconFormHijoActual.IconChar = FontAwesome.Sharp.IconChar.Home;
-            this.iconFormHijoActual.IconColor = System.Drawing.Color.Lime;
-            this.iconFormHijoActual.IconSize = 42;
-            this.iconFormHijoActual.Location = new System.Drawing.Point(19, 25);
-            this.iconFormHijoActual.Name = "iconFormHijoActual";
-            this.iconFormHijoActual.Size = new System.Drawing.Size(44, 42);
-            this.iconFormHijoActual.TabIndex = 0;
-            this.iconFormHijoActual.TabStop = false;
-            // 
-            // panelShadow
-            // 
-            this.panelShadow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(24)))), ((int)(((byte)(58)))));
-            this.panelShadow.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelShadow.Location = new System.Drawing.Point(220, 70);
-            this.panelShadow.Name = "panelShadow";
-            this.panelShadow.Size = new System.Drawing.Size(580, 9);
-            this.panelShadow.TabIndex = 2;
-            // 
-            // panelDesktop
-            // 
-            this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(74)))));
-            this.panelDesktop.Controls.Add(this.PicLogoCentro);
-            this.panelDesktop.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktop.Location = new System.Drawing.Point(220, 79);
-            this.panelDesktop.Name = "panelDesktop";
-            this.panelDesktop.Size = new System.Drawing.Size(580, 371);
-            this.panelDesktop.TabIndex = 3;
-            // 
-            // btnCerrar
-            // 
-            this.btnCerrar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCerrar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.None;
-            this.btnCerrar.IconColor = System.Drawing.Color.Black;
-            this.btnCerrar.IconSize = 16;
-            this.btnCerrar.Location = new System.Drawing.Point(502, 3);
-            this.btnCerrar.Name = "btnCerrar";
-            this.btnCerrar.Rotation = 0D;
-            this.btnCerrar.Size = new System.Drawing.Size(75, 23);
-            this.btnCerrar.TabIndex = 0;
-            this.btnCerrar.Text = "Cerrar";
-            this.btnCerrar.UseVisualStyleBackColor = true;
-            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
-            // 
-            // PicLogoCentro
-            // 
-            this.PicLogoCentro.Image = global::Presentancion.Properties.Resources.Logo_FrutOnline;
-            this.PicLogoCentro.Location = new System.Drawing.Point(160, 92);
-            this.PicLogoCentro.Name = "PicLogoCentro";
-            this.PicLogoCentro.Size = new System.Drawing.Size(256, 140);
-            this.PicLogoCentro.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.PicLogoCentro.TabIndex = 0;
-            this.PicLogoCentro.TabStop = false;
             // 
             // PanelMenu
             // 
@@ -279,12 +279,12 @@
             this.Text = "Form1";
             this.panelTras.ResumeLayout(false);
             this.panelLogo.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.PanelTitleBar.ResumeLayout(false);
             this.PanelTitleBar.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.iconFormHijoActual)).EndInit();
             this.panelDesktop.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PicLogoCentro)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconFormHijoActual)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.ResumeLayout(false);
 
         }

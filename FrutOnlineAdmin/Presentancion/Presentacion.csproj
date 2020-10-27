@@ -110,5 +110,8 @@
   <ItemGroup>
     <Folder Include="Formularios\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo FrutOnline SIN F.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -69,5 +69,15 @@ namespace Presentancion.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_FrutOnline_SIN_F {
+            get {
+                object obj = ResourceManager.GetObject("Logo FrutOnline SIN F", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
