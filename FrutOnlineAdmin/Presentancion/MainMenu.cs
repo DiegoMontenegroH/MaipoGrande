@@ -98,6 +98,7 @@ namespace Presentancion
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
+            panelDesktop.Controls.Add(childForm);
             panelDesktop.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
@@ -109,21 +110,26 @@ namespace Presentancion
         private void BtnTrasportistas_Click(object sender, EventArgs e)
         {
             ActivateButtton(sender, RGBColors.color1);
+            //OpenChildForm(new NOMBRE FORMULARIO());
         }
 
         private void BtnSolicitudes_Click(object sender, EventArgs e)
         {
             ActivateButtton(sender, RGBColors.color2);
+            //OpenChildForm(new NOMBRE FORMULARIO());
         }
 
         private void BtnInforme_Click(object sender, EventArgs e)
         {
             ActivateButtton(sender, RGBColors.color3);
+            //OpenChildForm(new NOMBRE FORMULARIO());
         }
 
         private void btnHome_Click(object sender, EventArgs e)
         {
+            currentChildForm.Close();
             Reset();
+             
         }
 
         private void Reset()
@@ -139,6 +145,7 @@ namespace Presentancion
         private void BtnClienteExterno_Click(object sender, EventArgs e)
         {
             ActivateButtton(sender, RGBColors.color4);
+            //OpenChildForm(new NOMBRE FORMULARIO());
         }
 
         //DRAG FORM
@@ -155,6 +162,11 @@ namespace Presentancion
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
