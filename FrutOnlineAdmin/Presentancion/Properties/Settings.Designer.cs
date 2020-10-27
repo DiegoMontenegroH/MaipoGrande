@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MaipoGrande.Properties
+namespace Presentancion.Properties
 {
 
 
