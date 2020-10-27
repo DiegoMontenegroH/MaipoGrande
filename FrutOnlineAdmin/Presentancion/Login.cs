@@ -100,7 +100,7 @@ namespace LOGIN
         }
 
         private void btn_acceder_Click(object sender, EventArgs e)
-        {
+        {   
             OracleConnection ora = new OracleConnection("DATA SOURCE = xe; PASSWORD=admin;USER ID=C##Manuel;");
             ora.Open();
             MessageBox.Show("CONECTADO");

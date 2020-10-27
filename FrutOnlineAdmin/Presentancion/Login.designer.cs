@@ -56,6 +56,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Image = global::Presentancion.Properties.Resources.Logo_FrutOnline;
             this.pictureBox1.Location = new System.Drawing.Point(12, 108);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(224, 105);
