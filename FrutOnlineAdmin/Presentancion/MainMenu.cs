@@ -12,6 +12,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Windows.Media.Animation;
 using FontAwesome.Sharp;
+using Presentancion.Formularios;
 
 namespace Presentancion
 {
@@ -42,6 +43,7 @@ namespace Presentancion
             public static Color color2 = Color.FromArgb(249, 118, 176);
             public static Color color3 = Color.FromArgb(253, 138, 114); 
             public static Color color4 = Color.FromArgb(95, 77, 221);
+            public static Color color5 = Color.LawnGreen;
         }
 
         //metodos
@@ -110,7 +112,7 @@ namespace Presentancion
         private void BtnTrasportistas_Click(object sender, EventArgs e)
         {
             ActivateButtton(sender, RGBColors.color1);
-            //OpenChildForm(new NOMBRE FORMULARIO());
+            OpenChildForm(new ListarTransportista());
         }
 
         private void BtnSolicitudes_Click(object sender, EventArgs e)
@@ -167,6 +169,11 @@ namespace Presentancion
         private void btnCerrar_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void BtnTransporte_Click(object sender, EventArgs e)
+        {
+            ActivateButtton(sender, RGBColors.color5);
         }
     }
 }

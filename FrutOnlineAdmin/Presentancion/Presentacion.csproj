@@ -54,6 +54,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formularios\AgregarTransportista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\AgregarTransportista.Designer.cs">
+      <DependentUpon>AgregarTransportista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\ListarTransportista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\ListarTransportista.Designer.cs">
+      <DependentUpon>ListarTransportista.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,6 +80,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\ListarTransportista.resx">
+      <DependentUpon>ListarTransportista.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
     </EmbeddedResource>
@@ -107,9 +122,7 @@
   <ItemGroup>
     <None Include="Resources\Logo FrutOnline.PNG" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Formularios\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\Logo FrutOnline SIN F.png" />
   </ItemGroup>
