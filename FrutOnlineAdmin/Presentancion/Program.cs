@@ -17,7 +17,7 @@ namespace Presentancion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ListarTrasportista());
+            Application.Run(new PanelMenu());
         }
     }
 }
