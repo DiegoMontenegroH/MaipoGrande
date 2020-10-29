@@ -78,6 +78,12 @@
     <Compile Include="Formularios\Solicitud.Designer.cs">
       <DependentUpon>Solicitud.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Transportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Transportes.Designer.cs">
+      <DependentUpon>Transportes.cs</DependentUpon>
+    </Compile>
     <Compile Include="MainMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -100,6 +106,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formularios\Solicitud.resx">
       <DependentUpon>Solicitud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Transportes.resx">
+      <DependentUpon>Transportes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
