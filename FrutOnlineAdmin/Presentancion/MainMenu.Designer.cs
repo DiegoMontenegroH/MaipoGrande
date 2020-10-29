@@ -78,6 +78,7 @@
             this.BtnTransporte.ForeColor = System.Drawing.Color.White;
             this.BtnTransporte.IconChar = FontAwesome.Sharp.IconChar.Dolly;
             this.BtnTransporte.IconColor = System.Drawing.Color.White;
+            this.BtnTransporte.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnTransporte.IconSize = 40;
             this.BtnTransporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnTransporte.Location = new System.Drawing.Point(0, 360);
@@ -101,6 +102,7 @@
             this.BtnClienteExterno.ForeColor = System.Drawing.Color.White;
             this.BtnClienteExterno.IconChar = FontAwesome.Sharp.IconChar.Users;
             this.BtnClienteExterno.IconColor = System.Drawing.Color.White;
+            this.BtnClienteExterno.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnClienteExterno.IconSize = 40;
             this.BtnClienteExterno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnClienteExterno.Location = new System.Drawing.Point(0, 300);
@@ -124,6 +126,7 @@
             this.BtnInformes.ForeColor = System.Drawing.Color.White;
             this.BtnInformes.IconChar = FontAwesome.Sharp.IconChar.ClipboardList;
             this.BtnInformes.IconColor = System.Drawing.Color.White;
+            this.BtnInformes.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnInformes.IconSize = 40;
             this.BtnInformes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnInformes.Location = new System.Drawing.Point(0, 240);
@@ -147,6 +150,7 @@
             this.BtnTrasportista.ForeColor = System.Drawing.Color.White;
             this.BtnTrasportista.IconChar = FontAwesome.Sharp.IconChar.TruckPickup;
             this.BtnTrasportista.IconColor = System.Drawing.Color.White;
+            this.BtnTrasportista.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnTrasportista.IconSize = 40;
             this.BtnTrasportista.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnTrasportista.Location = new System.Drawing.Point(0, 180);
@@ -170,6 +174,7 @@
             this.BtnSolicitud.ForeColor = System.Drawing.Color.White;
             this.BtnSolicitud.IconChar = FontAwesome.Sharp.IconChar.ClipboardCheck;
             this.BtnSolicitud.IconColor = System.Drawing.Color.White;
+            this.BtnSolicitud.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnSolicitud.IconSize = 40;
             this.BtnSolicitud.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnSolicitud.Location = new System.Drawing.Point(0, 120);
@@ -229,6 +234,7 @@
             this.btnCerrar.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.btnCerrar.IconChar = FontAwesome.Sharp.IconChar.None;
             this.btnCerrar.IconColor = System.Drawing.Color.Black;
+            this.btnCerrar.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCerrar.IconSize = 16;
             this.btnCerrar.Location = new System.Drawing.Point(786, 3);
             this.btnCerrar.Name = "btnCerrar";
@@ -255,6 +261,7 @@
             this.iconFormHijoActual.ForeColor = System.Drawing.Color.Lime;
             this.iconFormHijoActual.IconChar = FontAwesome.Sharp.IconChar.Home;
             this.iconFormHijoActual.IconColor = System.Drawing.Color.Lime;
+            this.iconFormHijoActual.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconFormHijoActual.IconSize = 42;
             this.iconFormHijoActual.Location = new System.Drawing.Point(19, 25);
             this.iconFormHijoActual.Name = "iconFormHijoActual";

@@ -118,7 +118,7 @@ namespace Presentancion
         private void BtnSolicitudes_Click(object sender, EventArgs e)
         {
             ActivateButtton(sender, RGBColors.color2);
-            //OpenChildForm(new NOMBRE FORMULARIO());
+            OpenChildForm(new Solicitud());
         }
 
         private void BtnInforme_Click(object sender, EventArgs e)
@@ -147,6 +147,7 @@ namespace Presentancion
         private void BtnClienteExterno_Click(object sender, EventArgs e)
         {
             ActivateButtton(sender, RGBColors.color4);
+            // descomentas y entre los () pones el nombre del Form
             //OpenChildForm(new NOMBRE FORMULARIO());
         }
 

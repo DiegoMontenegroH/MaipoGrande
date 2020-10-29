@@ -11,20 +11,21 @@ using System.Data.OracleClient;
 
 namespace Presentancion.Formularios
 {
-    public partial class ListarTransportista : Form
+    public partial class Solicitud : Form
     {
-        OracleConnection ora = new OracleConnection("DATA SOURCE = xe; PASSWORD=admin;USER ID=C##MANUEL;");
-        public ListarTransportista()
+        public Solicitud()
         {
             InitializeComponent();
         }
 
+        OracleConnection ora = new OracleConnection("DATA SOURCE = xe; PASSWORD=admin;USER ID=C##MANUEL;");
         private void button1_Click(object sender, EventArgs e)
         {
+
             ora.Open();
-            OracleCommand comando = new OracleCommand("seleccionarTransportistas", ora);
+            OracleCommand comando = new OracleCommand("seleccionarSolicitudes", ora);
             comando.CommandType = System.Data.CommandType.StoredProcedure;
-            comando.Parameters.Add("registros", OracleType.Cursor).Direction=ParameterDirection.Output;
+            comando.Parameters.Add("registros", OracleType.Cursor).Direction = ParameterDirection.Output;
 
             OracleDataAdapter adaptador = new OracleDataAdapter();
             adaptador.SelectCommand = comando;
@@ -33,7 +34,7 @@ namespace Presentancion.Formularios
             dataGridView1.DataSource = tabla;
 
             ora.Close();
-        }
 
+        }
     }
 }
