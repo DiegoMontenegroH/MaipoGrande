@@ -34,5 +34,37 @@ namespace Presentancion.Formularios
 
             ora.Close();
         }
+
+        private void btnInsertar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ora.Open();
+                OracleCommand comando = new OracleCommand("SPinsertar_transportista", ora);
+                comando.CommandType = System.Data.CommandType.StoredProcedure;
+                comando.Parameters.Add("newRut", OracleType.VarChar).Value = txtRut.Text;
+                comando.Parameters.Add("newNombre", OracleType.VarChar).Value = txtnombre.Text;
+                comando.Parameters.Add("newApellido", OracleType.VarChar).Value = txtApellido.Text;
+                comando.Parameters.Add("newTelefono", OracleType.Number).Value = TxtTelefono.Text;
+                comando.Parameters.Add("newEmail", OracleType.VarChar).Value = txtEmail.Text;
+                //comando.Parameters.Add("newUser", OracleType.VarChar).Value = txtUserName.Text;
+                comando.ExecuteNonQuery();
+                MessageBox.Show("transportista insertado");
+            }
+            catch (Exception)
+            {
+                
+                MessageBox.Show("error");
+            }
+            ora.Close();
+
+
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
