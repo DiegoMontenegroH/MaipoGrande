@@ -127,6 +127,12 @@ namespace Presentancion
             //OpenChildForm(new NOMBRE FORMULARIO());
         }
 
+        private void BtnContrato_Click(object sender, EventArgs e)
+        {
+            ActivateButtton(sender, RGBColors.color3);
+            OpenChildForm(new Contratos());
+        }
+
         private void btnHome_Click(object sender, EventArgs e)
         {
             currentChildForm.Close();
@@ -176,6 +182,7 @@ namespace Presentancion
         {
             ActivateButtton(sender, RGBColors.color5);
         }
+
     }
 }
 

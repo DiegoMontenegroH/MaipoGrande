@@ -30,6 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panelTras = new System.Windows.Forms.Panel();
+            this.BtnContrato = new FontAwesome.Sharp.IconButton();
             this.BtnTransporte = new FontAwesome.Sharp.IconButton();
             this.BtnClienteExterno = new FontAwesome.Sharp.IconButton();
             this.BtnInformes = new FontAwesome.Sharp.IconButton();
@@ -57,6 +58,7 @@
             // panelTras
             // 
             this.panelTras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(81)))));
+            this.panelTras.Controls.Add(this.BtnContrato);
             this.panelTras.Controls.Add(this.BtnTransporte);
             this.panelTras.Controls.Add(this.BtnClienteExterno);
             this.panelTras.Controls.Add(this.BtnInformes);
@@ -68,6 +70,30 @@
             this.panelTras.Name = "panelTras";
             this.panelTras.Size = new System.Drawing.Size(220, 561);
             this.panelTras.TabIndex = 0;
+            // 
+            // BtnContrato
+            // 
+            this.BtnContrato.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnContrato.FlatAppearance.BorderSize = 0;
+            this.BtnContrato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnContrato.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.BtnContrato.ForeColor = System.Drawing.Color.White;
+            this.BtnContrato.IconChar = FontAwesome.Sharp.IconChar.Dolly;
+            this.BtnContrato.IconColor = System.Drawing.Color.White;
+            this.BtnContrato.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnContrato.IconSize = 40;
+            this.BtnContrato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnContrato.Location = new System.Drawing.Point(0, 420);
+            this.BtnContrato.Name = "BtnContrato";
+            this.BtnContrato.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnContrato.Rotation = 0D;
+            this.BtnContrato.Size = new System.Drawing.Size(220, 60);
+            this.BtnContrato.TabIndex = 6;
+            this.BtnContrato.Text = "Contrato";
+            this.BtnContrato.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnContrato.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnContrato.UseVisualStyleBackColor = true;
+            this.BtnContrato.Click += new System.EventHandler(this.BtnContrato_Click);
             // 
             // BtnTransporte
             // 
@@ -339,6 +365,7 @@
         private FontAwesome.Sharp.IconButton btnCerrar;
         private System.Windows.Forms.PictureBox PicLogoCentro;
         private FontAwesome.Sharp.IconButton BtnTransporte;
+        private FontAwesome.Sharp.IconButton BtnContrato;
     }
 }
 

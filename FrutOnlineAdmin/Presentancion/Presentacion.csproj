@@ -60,6 +60,12 @@
     <Compile Include="Formularios\AgregarTransportista.Designer.cs">
       <DependentUpon>AgregarTransportista.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formularios\Contratos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Contratos.Designer.cs">
+      <DependentUpon>Contratos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Formularios\ListarTransportista.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Formularios\Contratos.resx">
+      <DependentUpon>Contratos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Formularios\ListarTransportista.resx">
       <DependentUpon>ListarTransportista.cs</DependentUpon>
     </EmbeddedResource>
