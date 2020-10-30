@@ -181,6 +181,7 @@ namespace Presentancion
         private void BtnTransporte_Click(object sender, EventArgs e)
         {
             ActivateButtton(sender, RGBColors.color5);
+            OpenChildForm(new Transportes());
         }
 
     }

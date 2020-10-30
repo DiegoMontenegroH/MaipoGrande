@@ -42,6 +42,7 @@
             this.btnAgregarTransporte = new System.Windows.Forms.Button();
             this.dgvTransportes = new System.Windows.Forms.DataGridView();
             this.btnCargarTransportes = new System.Windows.Forms.Button();
+            this.btnEliminarTransporte = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTransportes)).BeginInit();
             this.SuspendLayout();
             // 
@@ -166,11 +167,22 @@
             this.btnCargarTransportes.UseVisualStyleBackColor = true;
             this.btnCargarTransportes.Click += new System.EventHandler(this.btnCargarTransportes_Click);
             // 
+            // btnEliminarTransporte
+            // 
+            this.btnEliminarTransporte.Location = new System.Drawing.Point(383, 383);
+            this.btnEliminarTransporte.Name = "btnEliminarTransporte";
+            this.btnEliminarTransporte.Size = new System.Drawing.Size(75, 37);
+            this.btnEliminarTransporte.TabIndex = 29;
+            this.btnEliminarTransporte.Text = "Eliminar Transporte";
+            this.btnEliminarTransporte.UseVisualStyleBackColor = true;
+            this.btnEliminarTransporte.Click += new System.EventHandler(this.btnEliminarTransporte_Click);
+            // 
             // Transportes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnEliminarTransporte);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -209,5 +221,6 @@
         private System.Windows.Forms.Button btnAgregarTransporte;
         private System.Windows.Forms.DataGridView dgvTransportes;
         private System.Windows.Forms.Button btnCargarTransportes;
+        private System.Windows.Forms.Button btnEliminarTransporte;
     }
 }
