@@ -54,6 +54,7 @@
             this.btnModificar.TabIndex = 28;
             this.btnModificar.Text = "Modificar Transporte";
             this.btnModificar.UseVisualStyleBackColor = true;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click_1);
             // 
             // label5
             // 
@@ -148,6 +149,7 @@
             this.btnAgregarTransporte.TabIndex = 17;
             this.btnAgregarTransporte.Text = "Agregar Transporte";
             this.btnAgregarTransporte.UseVisualStyleBackColor = true;
+            this.btnAgregarTransporte.Click += new System.EventHandler(this.btnAgregarTransporte_Click_1);
             // 
             // dgvTransportes
             // 

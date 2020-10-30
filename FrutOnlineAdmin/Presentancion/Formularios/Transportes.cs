@@ -36,9 +36,30 @@ namespace Presentancion.Formularios
             ora.Close();
         }
 
-        private void btnAgregarTransporte_Click(object sender, EventArgs e)
-        {
 
+        private void btnEliminarTransporte_Click(object sender, EventArgs e)
+        {
+            try 
+            {
+                ora.Open();
+                OracleCommand comando = new OracleCommand("SP_ELIMINAR_TRANSPORTE", ora);
+                comando.CommandType = System.Data.CommandType.StoredProcedure;
+                comando.Parameters.Add("v_patente", OracleType.VarChar).Value = txtPatente.Text;
+
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Transporte eliminado");
+
+            }
+            catch(Exception)
+            {
+                MessageBox.Show("No se ha podido eliminar el transporte");
+            }
+
+            ora.Close();
+        }
+
+        private void btnAgregarTransporte_Click_1(object sender, EventArgs e)
+        {
             try
             {
 
@@ -61,10 +82,9 @@ namespace Presentancion.Formularios
             }
 
             ora.Close();
-
         }
 
-        private void btnModificar_Click(object sender, EventArgs e)
+        private void btnModificar_Click_1(object sender, EventArgs e)
         {
             try
             {
@@ -85,27 +105,6 @@ namespace Presentancion.Formularios
             catch (Exception)
             {
                 MessageBox.Show("No se ha podido modificar el transporte");
-            }
-
-            ora.Close();
-        }
-
-        private void btnEliminarTransporte_Click(object sender, EventArgs e)
-        {
-            try 
-            {
-                ora.Open();
-                OracleCommand comando = new OracleCommand("SP_ELIMINAR_TRANSPORTE", ora);
-                comando.CommandType = System.Data.CommandType.StoredProcedure;
-                comando.Parameters.Add("v_patente", OracleType.VarChar).Value = txtPatente.Text;
-
-                comando.ExecuteNonQuery();
-                MessageBox.Show("Transporte eliminado");
-
-            }
-            catch(Exception)
-            {
-                MessageBox.Show("No se ha podido eliminar el transporte");
             }
 
             ora.Close();
