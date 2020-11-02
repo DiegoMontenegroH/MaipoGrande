@@ -59,5 +59,32 @@ namespace Presentancion.Formularios
             ora.Close();
 
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            ora.Open();
+            OracleCommand comando = new OracleCommand("sp_modificar_contrato2", ora);
+            comando.CommandType = System.Data.CommandType.StoredProcedure;
+            comando.Parameters.Add("v_fecha_inicio", OracleType.DateTime).Value = dateTimeInicio.Text;
+            comando.Parameters.Add("v_fecha_fin", OracleType.DateTime).Value = dateTimeFin.Text;
+            comando.Parameters.Add("v_rut_productor", OracleType.VarChar).Value = txtRutProductor.Text;
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Contrato Modificado");
+            ora.Close();
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+            {
+                ora.Open();
+                OracleCommand comando = new OracleCommand("eliminarContrato", ora);
+                comando.CommandType = System.Data.CommandType.StoredProcedure;
+                comando.Parameters.Add("v_rut", OracleType.Number).Value = Convert.ToInt32(txtRutProductor.Text);
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Contrato Eliminado");
+                ora.Close();
+            }
+        }
     }
 }
