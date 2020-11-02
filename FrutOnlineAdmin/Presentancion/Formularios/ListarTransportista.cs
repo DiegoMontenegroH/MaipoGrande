@@ -13,7 +13,7 @@ namespace Presentancion.Formularios
 {
     public partial class ListarTransportista : Form
     {
-        OracleConnection ora = new OracleConnection("DATA SOURCE = xe; PASSWORD=admin;USER ID=C##MANUEL;");
+        OracleConnection ora = new OracleConnection("DATA SOURCE = xe; PASSWORD=admin;USER ID=C##Manuel;");
         public ListarTransportista()
         {
             InitializeComponent();
@@ -35,5 +35,82 @@ namespace Presentancion.Formularios
             ora.Close();
         }
 
+        private void btnInsertar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ora.Open();
+                OracleCommand comando = new OracleCommand("insertar_transportista", ora);
+                comando.CommandType = System.Data.CommandType.StoredProcedure;
+                comando.Parameters.Add("newRut", OracleType.VarChar).Value = txtRut.Text;
+                comando.Parameters.Add("newNombre", OracleType.VarChar).Value = txtnombre.Text;
+                comando.Parameters.Add("newApellido", OracleType.VarChar).Value = txtApellido.Text;
+                comando.Parameters.Add("newTelefono", OracleType.Number).Value = Convert.ToInt32(TxtTelefono.Text);
+                comando.Parameters.Add("newEmail", OracleType.VarChar).Value = txtEmail.Text;
+                comando.Parameters.Add("newUser", OracleType.VarChar).Value = txtUserName.Text;
+                comando.ExecuteNonQuery();
+                MessageBox.Show("transportista insertado");
+            }
+            catch (Exception)
+            {
+                
+                MessageBox.Show("error");
+            }
+            ora.Close();
+
+
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtActualizar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnActualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ora.Open();
+                OracleCommand comando = new OracleCommand("actualizar_trans", ora);
+                comando.CommandType = System.Data.CommandType.StoredProcedure;
+                comando.Parameters.Add("newRut", OracleType.VarChar).Value = txtRut.Text;
+                comando.Parameters.Add("newNombre", OracleType.VarChar).Value = txtnombre.Text;
+                comando.Parameters.Add("newApellido", OracleType.VarChar).Value = txtApellido.Text;
+                comando.Parameters.Add("newTelefono", OracleType.Number).Value = Convert.ToInt32(TxtTelefono.Text);
+                comando.Parameters.Add("newEmail", OracleType.VarChar).Value = txtEmail.Text;
+                comando.Parameters.Add("newUser", OracleType.VarChar).Value = txtUserName.Text;
+
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Persona actualizada");
+                
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Error actualizar ");
+            }
+            ora.Close();
+
+
+        }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+            ora.Open();
+            OracleCommand comando = new OracleCommand("Eliminar_trans", ora);
+            comando.CommandType = System.Data.CommandType.StoredProcedure;
+            comando.Parameters.Add("newRut", OracleType.VarChar).Value = txtRut.Text;
+            comando.ExecuteNonQuery();
+            MessageBox.Show("Persona Eliminada");
+            ora.Close();
+
+
+        }
     }
 }

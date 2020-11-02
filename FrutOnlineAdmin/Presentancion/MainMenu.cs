@@ -108,21 +108,37 @@ namespace Presentancion
 
 
         }
+        private void CloseChildForm()
+        {
+            if (currentChildForm != null) { 
+            this.currentChildForm.Close();
+        }
+        }
+
+
+
+
 
         private void BtnTrasportistas_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
             ActivateButtton(sender, RGBColors.color1);
             OpenChildForm(new ListarTransportista());
+            
+
+
         }
 
         private void BtnSolicitudes_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
             ActivateButtton(sender, RGBColors.color2);
             OpenChildForm(new Solicitud());
         }
 
         private void BtnInforme_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
             ActivateButtton(sender, RGBColors.color3);
             //OpenChildForm(new NOMBRE FORMULARIO());
         }
@@ -134,7 +150,9 @@ namespace Presentancion
         }
 
         private void btnHome_Click(object sender, EventArgs e)
+
         {
+            CloseChildForm();
             currentChildForm.Close();
             Reset();
              
@@ -152,6 +170,7 @@ namespace Presentancion
 
         private void BtnClienteExterno_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
             ActivateButtton(sender, RGBColors.color4);
             // descomentas y entre los () pones el nombre del Form
             //OpenChildForm(new NOMBRE FORMULARIO());
@@ -180,9 +199,12 @@ namespace Presentancion
 
         private void BtnTransporte_Click(object sender, EventArgs e)
         {
+            CloseChildForm();
             ActivateButtton(sender, RGBColors.color5);
+            //OpenChildForm(new NOMBRE FORMULARIO());
         }
 
     }
-}
+    }
+
 
