@@ -54,12 +54,6 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Formularios\AgregarTransportista.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Formularios\AgregarTransportista.Designer.cs">
-      <DependentUpon>AgregarTransportista.cs</DependentUpon>
-    </Compile>
     <Compile Include="Formularios\Contratos.cs">
       <SubType>Form</SubType>
     </Compile>
