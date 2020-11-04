@@ -32,7 +32,6 @@
             this.panelTras = new System.Windows.Forms.Panel();
             this.BtnContrato = new FontAwesome.Sharp.IconButton();
             this.BtnTransporte = new FontAwesome.Sharp.IconButton();
-            this.BtnClienteExterno = new FontAwesome.Sharp.IconButton();
             this.BtnInformes = new FontAwesome.Sharp.IconButton();
             this.BtnTrasportista = new FontAwesome.Sharp.IconButton();
             this.BtnSolicitud = new FontAwesome.Sharp.IconButton();
@@ -60,7 +59,6 @@
             this.panelTras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(81)))));
             this.panelTras.Controls.Add(this.BtnContrato);
             this.panelTras.Controls.Add(this.BtnTransporte);
-            this.panelTras.Controls.Add(this.BtnClienteExterno);
             this.panelTras.Controls.Add(this.BtnInformes);
             this.panelTras.Controls.Add(this.BtnTrasportista);
             this.panelTras.Controls.Add(this.BtnSolicitud);
@@ -78,12 +76,12 @@
             this.BtnContrato.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnContrato.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
             this.BtnContrato.ForeColor = System.Drawing.Color.White;
-            this.BtnContrato.IconChar = FontAwesome.Sharp.IconChar.Dolly;
+            this.BtnContrato.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
             this.BtnContrato.IconColor = System.Drawing.Color.White;
             this.BtnContrato.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnContrato.IconSize = 40;
             this.BtnContrato.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnContrato.Location = new System.Drawing.Point(0, 420);
+            this.BtnContrato.Location = new System.Drawing.Point(0, 360);
             this.BtnContrato.Name = "BtnContrato";
             this.BtnContrato.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.BtnContrato.Rotation = 0D;
@@ -107,7 +105,7 @@
             this.BtnTransporte.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.BtnTransporte.IconSize = 40;
             this.BtnTransporte.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnTransporte.Location = new System.Drawing.Point(0, 360);
+            this.BtnTransporte.Location = new System.Drawing.Point(0, 300);
             this.BtnTransporte.Name = "BtnTransporte";
             this.BtnTransporte.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
             this.BtnTransporte.Rotation = 0D;
@@ -118,30 +116,6 @@
             this.BtnTransporte.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnTransporte.UseVisualStyleBackColor = true;
             this.BtnTransporte.Click += new System.EventHandler(this.BtnTransporte_Click);
-            // 
-            // BtnClienteExterno
-            // 
-            this.BtnClienteExterno.Dock = System.Windows.Forms.DockStyle.Top;
-            this.BtnClienteExterno.FlatAppearance.BorderSize = 0;
-            this.BtnClienteExterno.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnClienteExterno.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
-            this.BtnClienteExterno.ForeColor = System.Drawing.Color.White;
-            this.BtnClienteExterno.IconChar = FontAwesome.Sharp.IconChar.Users;
-            this.BtnClienteExterno.IconColor = System.Drawing.Color.White;
-            this.BtnClienteExterno.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.BtnClienteExterno.IconSize = 40;
-            this.BtnClienteExterno.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnClienteExterno.Location = new System.Drawing.Point(0, 300);
-            this.BtnClienteExterno.Name = "BtnClienteExterno";
-            this.BtnClienteExterno.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
-            this.BtnClienteExterno.Rotation = 0D;
-            this.BtnClienteExterno.Size = new System.Drawing.Size(220, 60);
-            this.BtnClienteExterno.TabIndex = 4;
-            this.BtnClienteExterno.Text = "ClienteExterno";
-            this.BtnClienteExterno.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnClienteExterno.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.BtnClienteExterno.UseVisualStyleBackColor = true;
-            this.BtnClienteExterno.Click += new System.EventHandler(this.BtnClienteExterno_Click);
             // 
             // BtnInformes
             // 
@@ -165,6 +139,7 @@
             this.BtnInformes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.BtnInformes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.BtnInformes.UseVisualStyleBackColor = true;
+            this.BtnInformes.Visible = false;
             this.BtnInformes.Click += new System.EventHandler(this.BtnInforme_Click);
             // 
             // BtnTrasportista
@@ -356,7 +331,6 @@
         private FontAwesome.Sharp.IconButton BtnTrasportista;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.PictureBox btnHome;
-        private FontAwesome.Sharp.IconButton BtnClienteExterno;
         private System.Windows.Forms.Panel PanelTitleBar;
         private FontAwesome.Sharp.IconPictureBox iconFormHijoActual;
         private System.Windows.Forms.Label lblTitleChildForm;
