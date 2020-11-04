@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 using System.Data.OracleClient;
+using Presentancion;
+
 
 namespace LOGIN
 {
@@ -99,12 +101,29 @@ namespace LOGIN
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
 
+        OracleConnection ora = new OracleConnection("DATA SOURCE = xe; PASSWORD=admin;USER ID=C##Manuel;");
         private void btn_acceder_Click(object sender, EventArgs e)
         {   
-            OracleConnection ora = new OracleConnection("DATA SOURCE = xe; PASSWORD=admin;USER ID=C##Manuel;");
+            
             ora.Open();
-            MessageBox.Show("CONECTADO");
-            ora.Close();
+            OracleCommand comando = new OracleCommand("SELECT * FROM ADMINC WHERE USERNAME = :userino AND PASSWORD = :passworina", ora);
+            comando.Parameters.AddWithValue(":userino", txt_usuario.Text);
+            comando.Parameters.AddWithValue(":passworina", txtpass.Text);
+            
+
+            OracleDataReader lector = comando.ExecuteReader();
+
+            if (lector.Read())
+            {
+                PanelMenu formulario = new PanelMenu();
+                ora.Close();
+                formulario.Show();
+            }
+            else
+            {
+                MessageBox.Show("error");
+                ora.Close();
+            }
         }
     }
 }
