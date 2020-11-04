@@ -87,8 +87,17 @@ namespace Presentancion.Formularios
             }
         }
 
+        int indexRow;
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+            indexRow = e.RowIndex;
+            DataGridViewRow row = dataGridView1.Rows[indexRow];
+
+            dateTimeInicio.Text = row.Cells[1].Value.ToString();
+            dateTimeFin.Text = row.Cells[2].Value.ToString();
+            txtRutProductor.Text = row.Cells[3].Value.ToString();
+            
 
         }
     }

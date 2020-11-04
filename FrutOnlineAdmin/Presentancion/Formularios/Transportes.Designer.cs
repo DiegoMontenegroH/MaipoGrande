@@ -158,6 +158,7 @@
             this.dgvTransportes.Name = "dgvTransportes";
             this.dgvTransportes.Size = new System.Drawing.Size(545, 258);
             this.dgvTransportes.TabIndex = 16;
+            this.dgvTransportes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTransportes_CellContentClick);
             // 
             // btnCargarTransportes
             // 

@@ -109,5 +109,19 @@ namespace Presentancion.Formularios
 
             ora.Close();
         }
+
+        int indexRow;
+
+        private void dgvTransportes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            indexRow = e.RowIndex;
+            DataGridViewRow row = dgvTransportes.Rows[indexRow];
+
+            txtPatente.Text = row.Cells[0].Value.ToString();
+            txtCapacidad.Text = row.Cells[1].Value.ToString();
+            txtTamanio.Text = row.Cells[2].Value.ToString();
+            txtRut_Transportista.Text = row.Cells[3].Value.ToString();
+        }
     }
 }
