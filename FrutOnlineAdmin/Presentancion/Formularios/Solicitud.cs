@@ -36,5 +36,48 @@ namespace Presentancion.Formularios
             ora.Close();
 
         }
+
+        private void btnModificar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                ora.Open();
+                OracleCommand comando = new OracleCommand("sp_modificar_solicitud", ora);
+                comando.CommandType = System.Data.CommandType.StoredProcedure;
+
+                comando.Parameters.Add("v_presupuesto", OracleType.Number).Value = Convert.ToInt32(txtPresupuesto.Text);
+                comando.Parameters.Add("v_id_producto", OracleType.Number).Value = Convert.ToInt32(txtProducto.Text);
+                comando.Parameters.Add("v_nie", OracleType.Number).Value = Convert.ToInt32(txtRut.Text);
+                comando.Parameters.Add("v_id_fruta", OracleType.Number).Value = Convert.ToInt32(txtFruta.Text);
+                comando.Parameters.Add("v_id_estado", OracleType.Number).Value = Convert.ToInt32(txtEstado.Text);
+
+                comando.ExecuteNonQuery();
+                MessageBox.Show("Solicitud actualizada");
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("error");
+            }
+
+            ora.Close();
+        }
+
+
+        int indexRow;
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            indexRow = e.RowIndex;
+            DataGridViewRow row = dataGridView1.Rows[indexRow];
+
+            txtId.Text = row.Cells[0].Value.ToString();
+            txtPresupuesto.Text = row.Cells[1].Value.ToString();
+            txtProducto.Text = row.Cells[2].Value.ToString();
+            txtRut.Text = row.Cells[3].Value.ToString();
+            txtFruta.Text = row.Cells[4].Value.ToString();
+            txtEstado.Text = row.Cells[5].Value.ToString();
+        }
     }
 }
