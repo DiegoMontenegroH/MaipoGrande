@@ -112,5 +112,20 @@ namespace Presentancion.Formularios
 
 
         }
+
+        int indexRow;
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            indexRow = e.RowIndex;
+            DataGridViewRow row = dataGridView1.Rows[indexRow];
+
+            txtRut.Text = row.Cells[0].Value.ToString();
+            txtnombre.Text = row.Cells[1].Value.ToString();
+            txtApellido.Text = row.Cells[2].Value.ToString();
+            TxtTelefono.Text = row.Cells[3].Value.ToString();
+            txtEmail.Text = row.Cells[4].Value.ToString();
+
+
+        }
     }
 }
