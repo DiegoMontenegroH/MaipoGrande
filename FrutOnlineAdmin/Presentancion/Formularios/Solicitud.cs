@@ -23,7 +23,7 @@ namespace Presentancion.Formularios
         {
 
             ora.Open();
-            OracleCommand comando = new OracleCommand("seleccionarSolicitudes", ora);
+            OracleCommand comando = new OracleCommand("seleccionarSolicitudes2", ora);
             comando.CommandType = System.Data.CommandType.StoredProcedure;
             comando.Parameters.Add("registros", OracleType.Cursor).Direction = ParameterDirection.Output;
 
@@ -45,6 +45,7 @@ namespace Presentancion.Formularios
                 OracleCommand comando = new OracleCommand("sp_modificar_solicitud", ora);
                 comando.CommandType = System.Data.CommandType.StoredProcedure;
 
+            
                 comando.Parameters.Add("v_presupuesto", OracleType.Number).Value = Convert.ToInt32(txtPresupuesto.Text);
                 comando.Parameters.Add("v_id_producto", OracleType.Number).Value = Convert.ToInt32(txtProducto.Text);
                 comando.Parameters.Add("v_nie", OracleType.Number).Value = Convert.ToInt32(txtRut.Text);
@@ -56,7 +57,6 @@ namespace Presentancion.Formularios
             }
             catch (Exception)
             {
-
                 MessageBox.Show("error");
             }
 
@@ -79,5 +79,6 @@ namespace Presentancion.Formularios
             txtFruta.Text = row.Cells[4].Value.ToString();
             txtEstado.Text = row.Cells[5].Value.ToString();
         }
+
     }
 }
