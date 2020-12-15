@@ -63,6 +63,46 @@ namespace Presentancion.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1b {
+            get {
+                object obj = ResourceManager.GetObject("1b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _2_b {
+            get {
+                object obj = ResourceManager.GetObject("2 b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3b {
+            get {
+                object obj = ResourceManager.GetObject("3b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _4b {
+            get {
+                object obj = ResourceManager.GetObject("4b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo_FrutOnline {
             get {
                 object obj = ResourceManager.GetObject("Logo FrutOnline", resourceCulture);
@@ -76,6 +116,56 @@ namespace Presentancion.Properties {
         internal static System.Drawing.Bitmap Logo_FrutOnline_SIN_F {
             get {
                 object obj = ResourceManager.GetObject("Logo FrutOnline SIN F", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_FrutOnline_SIN_F1 {
+            get {
+                object obj = ResourceManager.GetObject("Logo FrutOnline SIN F1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Logo_FrutOnline_SIN_F2 {
+            get {
+                object obj = ResourceManager.GetObject("Logo FrutOnline SIN F2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mercabarna_fruta {
+            get {
+                object obj = ResourceManager.GetObject("mercabarna-fruta", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mg_b {
+            get {
+                object obj = ResourceManager.GetObject("mg b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trans_bl {
+            get {
+                object obj = ResourceManager.GetObject("trans bl", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.panelBlanco = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.raya1 = new System.Windows.Forms.Label();
             this.txt_usuario = new System.Windows.Forms.TextBox();
             this.raya2 = new System.Windows.Forms.Label();
@@ -39,6 +38,7 @@
             this.linkpass = new System.Windows.Forms.LinkLabel();
             this.link_cerrar = new System.Windows.Forms.LinkLabel();
             this.link_minimizar = new System.Windows.Forms.LinkLabel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panelBlanco.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,22 +47,11 @@
             // 
             this.panelBlanco.BackColor = System.Drawing.Color.White;
             this.panelBlanco.Controls.Add(this.pictureBox1);
-            this.panelBlanco.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelBlanco.Location = new System.Drawing.Point(0, 0);
             this.panelBlanco.Name = "panelBlanco";
             this.panelBlanco.Size = new System.Drawing.Size(250, 330);
             this.panelBlanco.TabIndex = 0;
             this.panelBlanco.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelBlanco_MouseDown);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Presentancion.Properties.Resources.Logo_FrutOnline;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 108);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(224, 105);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // raya1
             // 
@@ -186,6 +175,17 @@
             this.link_minimizar.Text = "_";
             this.link_minimizar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.link_minimizar.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.link_minimizar_LinkClicked);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = global::Presentancion.Properties.Resources.Logo_FrutOnline_SIN_F2;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 84);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(250, 142);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // FormNegro
             // 

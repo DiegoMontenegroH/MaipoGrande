@@ -51,15 +51,15 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(34, 12);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(704, 201);
+            this.dataGridView1.Size = new System.Drawing.Size(593, 157);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(564, 257);
+            this.button1.Location = new System.Drawing.Point(654, 58);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.Size = new System.Drawing.Size(103, 66);
             this.button1.TabIndex = 2;
             this.button1.Text = "Cargar";
             this.button1.UseVisualStyleBackColor = true;
@@ -67,9 +67,9 @@
             // 
             // btnModificar
             // 
-            this.btnModificar.Location = new System.Drawing.Point(564, 300);
+            this.btnModificar.Location = new System.Drawing.Point(224, 340);
             this.btnModificar.Name = "btnModificar";
-            this.btnModificar.Size = new System.Drawing.Size(75, 23);
+            this.btnModificar.Size = new System.Drawing.Size(100, 34);
             this.btnModificar.TabIndex = 3;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = true;
@@ -77,42 +77,42 @@
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(138, 230);
+            this.txtId.Location = new System.Drawing.Point(137, 185);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 4;
             // 
             // txtPresupuesto
             // 
-            this.txtPresupuesto.Location = new System.Drawing.Point(138, 266);
+            this.txtPresupuesto.Location = new System.Drawing.Point(137, 221);
             this.txtPresupuesto.Name = "txtPresupuesto";
             this.txtPresupuesto.Size = new System.Drawing.Size(100, 20);
             this.txtPresupuesto.TabIndex = 5;
             // 
             // txtProducto
             // 
-            this.txtProducto.Location = new System.Drawing.Point(138, 302);
+            this.txtProducto.Location = new System.Drawing.Point(137, 257);
             this.txtProducto.Name = "txtProducto";
             this.txtProducto.Size = new System.Drawing.Size(100, 20);
             this.txtProducto.TabIndex = 6;
             // 
             // txtRut
             // 
-            this.txtRut.Location = new System.Drawing.Point(366, 230);
+            this.txtRut.Location = new System.Drawing.Point(365, 185);
             this.txtRut.Name = "txtRut";
             this.txtRut.Size = new System.Drawing.Size(100, 20);
             this.txtRut.TabIndex = 7;
             // 
             // txtFruta
             // 
-            this.txtFruta.Location = new System.Drawing.Point(366, 268);
+            this.txtFruta.Location = new System.Drawing.Point(365, 223);
             this.txtFruta.Name = "txtFruta";
             this.txtFruta.Size = new System.Drawing.Size(100, 20);
             this.txtFruta.TabIndex = 8;
             // 
             // txtEstado
             // 
-            this.txtEstado.Location = new System.Drawing.Point(366, 304);
+            this.txtEstado.Location = new System.Drawing.Point(365, 259);
             this.txtEstado.Name = "txtEstado";
             this.txtEstado.Size = new System.Drawing.Size(100, 20);
             this.txtEstado.TabIndex = 9;
@@ -120,7 +120,8 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(71, 230);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(70, 185);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(18, 13);
             this.label1.TabIndex = 10;
@@ -129,7 +130,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(71, 268);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(70, 223);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(66, 13);
             this.label2.TabIndex = 11;
@@ -138,7 +140,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(71, 304);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(70, 259);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(50, 13);
             this.label3.TabIndex = 12;
@@ -147,7 +150,8 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(262, 232);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(261, 187);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 13);
             this.label4.TabIndex = 13;
@@ -156,7 +160,8 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(265, 267);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(264, 222);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(31, 13);
             this.label5.TabIndex = 14;
@@ -165,7 +170,8 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(265, 310);
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(264, 265);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(40, 13);
             this.label6.TabIndex = 15;
@@ -175,6 +181,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Presentancion.Properties.Resources._4b;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);

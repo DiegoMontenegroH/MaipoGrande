@@ -135,8 +135,11 @@ namespace Presentancion
 
         private void btnHome_Click(object sender, EventArgs e)
         {
-            currentChildForm.Close();
-            Reset();
+   
+
+                currentChildForm.Close();
+                Reset();
+            
              
         }
 
@@ -184,6 +187,26 @@ namespace Presentancion
             OpenChildForm(new Transportes());
         }
 
+        private void BtnReportes_Click(object sender, EventArgs e)
+        {
+            ActivateButtton(sender, RGBColors.color5);
+            OpenChildForm(new Reportes());
+        }
+
+        private void lblTitleChildForm_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void iconFormHijoActual_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelShadow_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
 
