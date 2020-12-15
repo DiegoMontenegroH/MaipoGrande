@@ -118,10 +118,37 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Logo FrutOnline" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo FrutOnline.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="trans bl" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\trans bl.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Logo FrutOnline SIN F" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Logo FrutOnline SIN F.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="2 b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2 b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo FrutOnline" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo FrutOnline.PNG;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="4b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\4b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="3b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\3b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mg b" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mg b.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mercabarna-fruta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mercabarna-fruta.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo FrutOnline SIN F1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo FrutOnline SIN F1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Logo FrutOnline SIN F2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo FrutOnline SIN F2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

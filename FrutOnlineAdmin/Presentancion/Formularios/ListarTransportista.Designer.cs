@@ -90,7 +90,7 @@
             // 
             // btnInsertar
             // 
-            this.btnInsertar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnInsertar.BackColor = System.Drawing.SystemColors.Control;
             this.btnInsertar.Location = new System.Drawing.Point(418, 185);
             this.btnInsertar.Name = "btnInsertar";
             this.btnInsertar.Size = new System.Drawing.Size(102, 48);
@@ -123,6 +123,7 @@
             // LblRut
             // 
             this.LblRut.AutoSize = true;
+            this.LblRut.BackColor = System.Drawing.Color.Transparent;
             this.LblRut.Location = new System.Drawing.Point(38, 185);
             this.LblRut.Name = "LblRut";
             this.LblRut.Size = new System.Drawing.Size(24, 13);
@@ -132,6 +133,7 @@
             // LblNombre
             // 
             this.LblNombre.AutoSize = true;
+            this.LblNombre.BackColor = System.Drawing.Color.Transparent;
             this.LblNombre.Location = new System.Drawing.Point(38, 226);
             this.LblNombre.Name = "LblNombre";
             this.LblNombre.Size = new System.Drawing.Size(44, 13);
@@ -142,6 +144,7 @@
             // LblApellido
             // 
             this.LblApellido.AutoSize = true;
+            this.LblApellido.BackColor = System.Drawing.Color.Transparent;
             this.LblApellido.Location = new System.Drawing.Point(38, 267);
             this.LblApellido.Name = "LblApellido";
             this.LblApellido.Size = new System.Drawing.Size(44, 13);
@@ -151,6 +154,7 @@
             // LblTelefono
             // 
             this.LblTelefono.AutoSize = true;
+            this.LblTelefono.BackColor = System.Drawing.Color.Transparent;
             this.LblTelefono.Location = new System.Drawing.Point(38, 302);
             this.LblTelefono.Name = "LblTelefono";
             this.LblTelefono.Size = new System.Drawing.Size(49, 13);
@@ -160,6 +164,7 @@
             // LblEmail
             // 
             this.LblEmail.AutoSize = true;
+            this.LblEmail.BackColor = System.Drawing.Color.Transparent;
             this.LblEmail.Location = new System.Drawing.Point(38, 335);
             this.LblEmail.Name = "LblEmail";
             this.LblEmail.Size = new System.Drawing.Size(32, 13);
@@ -169,6 +174,7 @@
             // LblUserName
             // 
             this.LblUserName.AutoSize = true;
+            this.LblUserName.BackColor = System.Drawing.Color.Transparent;
             this.LblUserName.Location = new System.Drawing.Point(38, 373);
             this.LblUserName.Name = "LblUserName";
             this.LblUserName.Size = new System.Drawing.Size(98, 13);
@@ -177,7 +183,7 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.btnActualizar.BackColor = System.Drawing.SystemColors.Control;
             this.btnActualizar.Location = new System.Drawing.Point(418, 267);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(102, 44);
@@ -188,7 +194,7 @@
             // 
             // BtnEliminar
             // 
-            this.BtnEliminar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.BtnEliminar.BackColor = System.Drawing.SystemColors.Control;
             this.BtnEliminar.Location = new System.Drawing.Point(418, 346);
             this.BtnEliminar.Name = "BtnEliminar";
             this.BtnEliminar.Size = new System.Drawing.Size(103, 44);
@@ -201,6 +207,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Presentancion.Properties.Resources.trans_bl;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(715, 450);
             this.Controls.Add(this.BtnEliminar);
             this.Controls.Add(this.btnActualizar);

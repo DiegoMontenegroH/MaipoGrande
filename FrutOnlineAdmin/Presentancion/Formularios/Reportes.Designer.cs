@@ -34,9 +34,9 @@
             // 
             // btnGenerar
             // 
-            this.btnGenerar.Location = new System.Drawing.Point(338, 73);
+            this.btnGenerar.Location = new System.Drawing.Point(106, 121);
             this.btnGenerar.Name = "btnGenerar";
-            this.btnGenerar.Size = new System.Drawing.Size(171, 101);
+            this.btnGenerar.Size = new System.Drawing.Size(225, 187);
             this.btnGenerar.TabIndex = 0;
             this.btnGenerar.Text = "Generar Reporte Ventas Externas";
             this.btnGenerar.UseVisualStyleBackColor = true;
@@ -44,9 +44,9 @@
             // 
             // btnReporteInterno
             // 
-            this.btnReporteInterno.Location = new System.Drawing.Point(338, 206);
+            this.btnReporteInterno.Location = new System.Drawing.Point(452, 121);
             this.btnReporteInterno.Name = "btnReporteInterno";
-            this.btnReporteInterno.Size = new System.Drawing.Size(171, 105);
+            this.btnReporteInterno.Size = new System.Drawing.Size(231, 187);
             this.btnReporteInterno.TabIndex = 1;
             this.btnReporteInterno.Text = "Generar Reporte Ventas Internas";
             this.btnReporteInterno.UseVisualStyleBackColor = true;
@@ -56,6 +56,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Presentancion.Properties.Resources._1b;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnReporteInterno);
             this.Controls.Add(this.btnGenerar);

@@ -59,6 +59,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Location = new System.Drawing.Point(209, 332);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(88, 13);
@@ -68,6 +69,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Location = new System.Drawing.Point(45, 332);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(46, 13);
@@ -77,6 +79,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Location = new System.Drawing.Point(380, 291);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(101, 13);
@@ -86,6 +89,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Location = new System.Drawing.Point(209, 291);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(58, 13);
@@ -95,6 +99,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Location = new System.Drawing.Point(45, 293);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(44, 13);
@@ -156,13 +161,13 @@
             this.dgvTransportes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTransportes.Location = new System.Drawing.Point(45, 30);
             this.dgvTransportes.Name = "dgvTransportes";
-            this.dgvTransportes.Size = new System.Drawing.Size(545, 258);
+            this.dgvTransportes.Size = new System.Drawing.Size(564, 245);
             this.dgvTransportes.TabIndex = 16;
             this.dgvTransportes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvTransportes_CellContentClick);
             // 
             // btnCargarTransportes
             // 
-            this.btnCargarTransportes.Location = new System.Drawing.Point(636, 30);
+            this.btnCargarTransportes.Location = new System.Drawing.Point(631, 41);
             this.btnCargarTransportes.Name = "btnCargarTransportes";
             this.btnCargarTransportes.Size = new System.Drawing.Size(120, 66);
             this.btnCargarTransportes.TabIndex = 15;
@@ -184,6 +189,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::Presentancion.Properties.Resources._2_b;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnEliminarTransporte);
             this.Controls.Add(this.btnModificar);
