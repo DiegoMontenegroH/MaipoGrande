@@ -184,6 +184,11 @@ namespace Presentancion
             OpenChildForm(new Transportes());
         }
 
+        private void BtnReportes_Click(object sender, EventArgs e)
+        {
+            ActivateButtton(sender, RGBColors.color5);
+            OpenChildForm(new Reportes());
+        }
     }
 }
 

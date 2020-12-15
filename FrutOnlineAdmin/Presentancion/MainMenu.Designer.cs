@@ -45,6 +45,7 @@
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.PicLogoCentro = new System.Windows.Forms.PictureBox();
+            this.BtnReportes = new FontAwesome.Sharp.IconButton();
             this.panelTras.SuspendLayout();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
@@ -57,6 +58,7 @@
             // panelTras
             // 
             this.panelTras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(81)))));
+            this.panelTras.Controls.Add(this.BtnReportes);
             this.panelTras.Controls.Add(this.BtnContrato);
             this.panelTras.Controls.Add(this.BtnTransporte);
             this.panelTras.Controls.Add(this.BtnInformes);
@@ -299,6 +301,30 @@
             this.PicLogoCentro.TabIndex = 0;
             this.PicLogoCentro.TabStop = false;
             // 
+            // BtnReportes
+            // 
+            this.BtnReportes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.BtnReportes.FlatAppearance.BorderSize = 0;
+            this.BtnReportes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnReportes.Flip = FontAwesome.Sharp.FlipOrientation.Normal;
+            this.BtnReportes.ForeColor = System.Drawing.Color.White;
+            this.BtnReportes.IconChar = FontAwesome.Sharp.IconChar.FileAlt;
+            this.BtnReportes.IconColor = System.Drawing.Color.White;
+            this.BtnReportes.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.BtnReportes.IconSize = 40;
+            this.BtnReportes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnReportes.Location = new System.Drawing.Point(0, 420);
+            this.BtnReportes.Name = "BtnReportes";
+            this.BtnReportes.Padding = new System.Windows.Forms.Padding(10, 0, 20, 0);
+            this.BtnReportes.Rotation = 0D;
+            this.BtnReportes.Size = new System.Drawing.Size(220, 60);
+            this.BtnReportes.TabIndex = 7;
+            this.BtnReportes.Text = "Reportes";
+            this.BtnReportes.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnReportes.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.BtnReportes.UseVisualStyleBackColor = true;
+            this.BtnReportes.Click += new System.EventHandler(this.BtnReportes_Click);
+            // 
             // PanelMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -340,6 +366,7 @@
         private System.Windows.Forms.PictureBox PicLogoCentro;
         private FontAwesome.Sharp.IconButton BtnTransporte;
         private FontAwesome.Sharp.IconButton BtnContrato;
+        private FontAwesome.Sharp.IconButton BtnReportes;
     }
 }
 
