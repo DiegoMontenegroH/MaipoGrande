@@ -44,9 +44,13 @@
             this.iconFormHijoActual = new FontAwesome.Sharp.IconPictureBox();
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
+            this.lblFecha = new System.Windows.Forms.Label();
+            this.lblHora = new System.Windows.Forms.Label();
+            this.horaFecha = new System.Windows.Forms.Timer(this.components);
             this.panelTras.SuspendLayout();
             this.PanelTitleBar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconFormHijoActual)).BeginInit();
+            this.panelDesktop.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelTras
@@ -285,10 +289,42 @@
             this.panelDesktop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(74)))));
             this.panelDesktop.BackgroundImage = global::Presentancion.Properties.Resources.mercabarna_fruta;
             this.panelDesktop.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelDesktop.Controls.Add(this.lblFecha);
+            this.panelDesktop.Controls.Add(this.lblHora);
             this.panelDesktop.Location = new System.Drawing.Point(220, 120);
             this.panelDesktop.Name = "panelDesktop";
             this.panelDesktop.Size = new System.Drawing.Size(864, 441);
             this.panelDesktop.TabIndex = 3;
+            // 
+            // lblFecha
+            // 
+            this.lblFecha.AutoSize = true;
+            this.lblFecha.BackColor = System.Drawing.Color.Transparent;
+            this.lblFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblFecha.ForeColor = System.Drawing.Color.Transparent;
+            this.lblFecha.Location = new System.Drawing.Point(178, 232);
+            this.lblFecha.Name = "lblFecha";
+            this.lblFecha.Size = new System.Drawing.Size(158, 55);
+            this.lblFecha.TabIndex = 1;
+            this.lblFecha.Text = "label2";
+            this.lblFecha.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // lblHora
+            // 
+            this.lblHora.AutoSize = true;
+            this.lblHora.BackColor = System.Drawing.Color.Transparent;
+            this.lblHora.Font = new System.Drawing.Font("Microsoft Sans Serif", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHora.ForeColor = System.Drawing.Color.White;
+            this.lblHora.Location = new System.Drawing.Point(282, 141);
+            this.lblHora.Name = "lblHora";
+            this.lblHora.Size = new System.Drawing.Size(297, 91);
+            this.lblHora.TabIndex = 0;
+            this.lblHora.Text = "lblHora";
+            // 
+            // horaFecha
+            // 
+            this.horaFecha.Enabled = true;
+            this.horaFecha.Tick += new System.EventHandler(this.horaFecha_Tick);
             // 
             // PanelMenu
             // 
@@ -305,6 +341,8 @@
             this.PanelTitleBar.ResumeLayout(false);
             this.PanelTitleBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.iconFormHijoActual)).EndInit();
+            this.panelDesktop.ResumeLayout(false);
+            this.panelDesktop.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -326,6 +364,9 @@
         private FontAwesome.Sharp.IconButton BtnTransporte;
         private FontAwesome.Sharp.IconButton BtnContrato;
         private FontAwesome.Sharp.IconButton BtnReportes;
+        private System.Windows.Forms.Label lblFecha;
+        private System.Windows.Forms.Label lblHora;
+        private System.Windows.Forms.Timer horaFecha;
     }
 }
 

@@ -220,6 +220,18 @@ namespace Presentancion
             }
 
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void horaFecha_Tick(object sender, EventArgs e)
+        {
+            lblHora.Text = DateTime.Now.ToString("HH:mm:ss");
+            lblFecha.Text = DateTime.Now.ToString("dddd MMMM yyy");
+        }
+
     }
 }
 
