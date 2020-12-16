@@ -137,8 +137,7 @@ namespace Presentancion
         {
    
 
-                currentChildForm.Close();
-                Reset();
+                
             
              
         }
@@ -205,6 +204,20 @@ namespace Presentancion
 
         private void panelShadow_Paint(object sender, PaintEventArgs e)
         {
+
+        }
+
+        private void panelLogo_Paint(object sender, PaintEventArgs e)
+        {
+          
+        }
+
+        private void click_Home_Icon(object sender, MouseEventArgs e)
+        {
+            if (currentChildForm != null){
+            currentChildForm.Close();
+            Reset();
+            }
 
         }
     }
